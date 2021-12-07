@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Ogg';
+  background-color: #e0e0e0;
+  color: #161616;
+}
+.header{
+  display: flex;
+  align-items: flex-end;
+  height: 30vh;
+  width: 100%;
+}
+.header .content{
+  font-size: 150px;
+  line-height: 90%;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+.slider-container{
+  overflow: hidden;
+}
+.slider{
+  height: 70vh;
+  position: relative;
+  width: 500%;
+  overflow: hidden;
+  left: 0;
+  animation: 30s animate infinite;
+}
+@keyframes animate {
+  0%{
+    left: 0%;
+  }
+  10%{
+    left: 0%;
+  }
+  25%{
+    left: -100%;
+  }
+  30%{
+    left: -100%;
+  }
+  55%{
+    left: -200%;
+  }
+  60%{
+    left: -200%;
+  }
+  85%{
+    left: -300%;
+  }
+  90%{
+    left: -400%;
+  }
+  100%{
+    left: -400%;
+  }
+}
+.img{
+  width: 20%;
+  float: left;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.img1{
+  background-image: url(/image1.jpg);
+}
+.img2{
+  background-image: url(/image2.jpg);
+}
+.img3{
+  background-image: url(/image3.jpg);
+}
+.img4{
+  background-image: url(/image4.jpg);
+}
+.img5{
+  background-image: url(/image5.jpg);
+}
